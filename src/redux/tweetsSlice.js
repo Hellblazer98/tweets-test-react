@@ -44,12 +44,7 @@ const tweetsSlice = createSlice({
                     if (item.id !== action.payload.id) {
                         return
                     }
-                    if(item.isFollowing) {
-                        item.followers = action.payload.followers;
-                    } else {
-                        item.followers = action.payload.followers;
-                    }
-                    
+                    item.followers = action.payload.followers;
                 })
             })
             .addMatcher(
