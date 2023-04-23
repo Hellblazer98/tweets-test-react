@@ -9,6 +9,7 @@ import { selectError, selectIsLoading } from "../redux/selectors";
 import { HiArrowLeft } from "react-icons/hi";
 import { GoBackLink, TweetsContainer } from "../Components/SharedLayout/SharedLayout.styled";
 import { Loader } from "../Components/Loader/Loader";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
 const Tweets = () => {
@@ -23,13 +24,19 @@ const Tweets = () => {
     }, [dispatch]);
 
     return (
-        <TweetsContainer>
-            <GoBackLink to={goBack.current}><HiArrowLeft size='12'/>Go Back</GoBackLink>
-            <Filter/>
-            {isLoading ? <Loader/>
-                : error ? <p>{error}</p>
-                    : <TweetsList/>}
-        </TweetsContainer>
+        <HelmetProvider>
+            <Helmet>
+                <title>Tweets</title>
+            </Helmet>
+            <TweetsContainer>
+                <GoBackLink to={goBack.current}><HiArrowLeft size='12' />Go Back</GoBackLink>
+                <Filter />
+                {isLoading ? <Loader />
+                    : error ? <p>{error}</p>
+                        : <TweetsList />}
+            </TweetsContainer>
+        </HelmetProvider>
+            
 
 
     )
