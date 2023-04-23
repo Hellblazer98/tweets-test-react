@@ -1,7 +1,20 @@
 import styled from "styled-components";
-
+import { NavLink } from 'react-router-dom';
 
 export const Nav = styled.nav`
     display: flex;
-    gap: 20px;
-`
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+`;
+
+export const LinkPage = styled(NavLink)`
+    font-size: 16px;
+    text-decoration: none;
+    color: #00212f;
+    font-weight: 600;
+
+    &.active {
+        color: #f83369;
+    }
+`;

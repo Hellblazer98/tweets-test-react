@@ -1,7 +1,7 @@
 import { CgTwitter } from 'react-icons/cg';
-import { NavLink } from 'react-router-dom';
+
 import { Navigation } from '../Navigation/Navigation';
-import { Header } from './AppBar.styled';
+import { Header, Logo } from './AppBar.styled';
 
 
 export const AppBar = () => {
@@ -9,9 +9,9 @@ export const AppBar = () => {
 
     return (
         <Header>
-            <NavLink to="/">
-                <CgTwitter size='30'></CgTwitter>
-            </NavLink>
+            <Logo to="/">
+                <CgTwitter size='40'></CgTwitter>
+            </Logo>
             <Navigation/>
         </Header>
 

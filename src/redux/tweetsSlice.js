@@ -21,7 +21,7 @@ const tweetsSlice = createSlice({
     initialState: initialState,
     reducers: {
         setFollow(state, action) {
-           for (const user of state) {
+           for (const user of state.items) {
                 if (user.id === action.payload) {
                     user.isFollowing = !user.isFollowing;
                     break;
@@ -38,10 +38,18 @@ const tweetsSlice = createSlice({
                 state.items = action.payload;
             })
             .addCase(patchUser.fulfilled, (state, action) => {
+                state.isLoading = false;
+                state.error = null;
                 state.items.forEach(item => {
-                    if(item.id === action.payload.id) {
-                        return item.followers = action.payload.followers
+                    if (item.id !== action.payload.id) {
+                        return
                     }
+                    if(item.isFollowing) {
+                        item.followers = action.payload.followers;
+                    } else {
+                        item.followers = action.payload.followers;
+                    }
+                    
                 })
             })
             .addMatcher(
