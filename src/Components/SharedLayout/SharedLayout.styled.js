@@ -81,4 +81,8 @@ export const Title = styled.h1`
 export const HomeWrap = styled.div`
     width: 700px;
     margin: 30px auto;
+
+    @media screen and (max-width: 761px) {
+      width: 380px;
+    }
 `
