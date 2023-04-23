@@ -12,7 +12,7 @@ import { store } from './redux/store.js'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter basename="/tweets-test-react/">
+      <BrowserRouter basename="/tweets-test-react">
         <Container>
           <App />
         </Container>
