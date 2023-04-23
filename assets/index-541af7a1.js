@@ -122,7 +122,7 @@ Error generating stack: `+i.message+`
 `,ow=St(qa)`
     text-decoration: none;
     color: #00212f;
-`,iw=()=>ne.jsxs(rw,{children:[ne.jsx(ow,{to:"/",children:ne.jsx(g1,{size:"40"})}),ne.jsx(nw,{})]}),lw=()=>ne.jsxs("div",{children:[ne.jsx(iw,{}),ne.jsx(P.Suspense,{fallback:null,children:ne.jsx(n1,{})})]}),uw=P.lazy(()=>Hh(()=>import("./Home-d6659625.js"),[])),sw=P.lazy(()=>Hh(()=>import("./Tweets-f2b40ea6.js"),[]));function aw(){return ne.jsx(o1,{children:ne.jsxs(ci,{path:"/",element:ne.jsx(lw,{}),children:[ne.jsx(ci,{index:!0,element:ne.jsx(uw,{})}),ne.jsx(ci,{path:"/tweets",element:ne.jsx(sw,{})})]})})}St.header`
+`,iw=()=>ne.jsxs(rw,{children:[ne.jsx(ow,{to:"/",children:ne.jsx(g1,{size:"40"})}),ne.jsx(nw,{})]}),lw=()=>ne.jsxs("div",{children:[ne.jsx(iw,{}),ne.jsx(P.Suspense,{fallback:null,children:ne.jsx(n1,{})})]}),uw=P.lazy(()=>Hh(()=>import("./Home-3e63c1b6.js"),["assets/Home-3e63c1b6.js","assets/index.module-eb8a33de.js"])),sw=P.lazy(()=>Hh(()=>import("./Tweets-30d095a3.js"),["assets/Tweets-30d095a3.js","assets/index.module-eb8a33de.js"]));function aw(){return ne.jsx(o1,{children:ne.jsxs(ci,{path:"/",element:ne.jsx(lw,{}),children:[ne.jsx(ci,{index:!0,element:ne.jsx(uw,{})}),ne.jsx(ci,{path:"/tweets",element:ne.jsx(sw,{})})]})})}St.header`
   display: flex;
   align-items: center;
   justify-content: space-between;

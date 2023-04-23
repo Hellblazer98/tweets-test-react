@@ -1,0 +1,1 @@
+import{j as e,H as t,T as s}from"./index-541af7a1.js";import{q as r,W as o}from"./index.module-eb8a33de.js";const a=()=>e.jsxs(r,{children:[e.jsx(o,{children:e.jsx("title",{children:"Home"})}),e.jsx(t,{children:e.jsx(s,{children:"Welcome to the TweetStats. More interesting things can be found on the Tweets page"})})]});export{a as default};

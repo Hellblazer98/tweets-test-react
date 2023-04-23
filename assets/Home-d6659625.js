@@ -1,1 +1,0 @@
-import{j as e,H as t,T as s}from"./index-6e103c02.js";const n=()=>e.jsx(t,{children:e.jsx(s,{children:"Welcome to the TweetStats. More interesting things can be found on the Tweets page"})});export{n as default};
